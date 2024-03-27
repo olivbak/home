@@ -41,6 +41,6 @@ nix -> $HOME/.config/nix
 home-manager -> $HOME/.config/home-manager
 ```
 
-4. search for 2 `TODOs` in nix files, and address.
+4. search for `TODOs` in nix files, and address.
 
 5. run `home-manager switch`

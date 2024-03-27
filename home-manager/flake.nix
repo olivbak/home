@@ -14,10 +14,9 @@
       system = "x86_64-linux";
       overlays = [ nixgl.overlay ];
     };
-    # TODO: needs to match username in variables.nix
-    username = "olivbak";
+    variables = import ./variables.nix;
   in {
-    homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.${variables.username} = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
 
       modules = [ ./home.nix ];
